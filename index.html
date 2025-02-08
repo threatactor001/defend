@@ -29,11 +29,6 @@
         .btn:hover {
             background-color: #333;
         }
-        img {
-            width: 200px;
-            height: auto;
-            filter: grayscale(100%);
-        }
     </style>
 </head>
 <body>
@@ -44,10 +39,8 @@
 
     <hr>
 
-    <!-- Suspicious-looking broken image -->
     <p>📁 Latest Database Leak: <a href="leaks/dump2025.zip">dump2025.zip</a> (Encrypted: `0x1337`)</p>
-    <img src="img/anonseller.png" alt="Darknet Vendor";">
-
+    
     <p>💰 Payment Methods: BTC / XMR only.</p>
     
     <button class="btn" onclick="document.getElementById('pgpBox').style.display='block'">🔐 Show PGP Key</button>
@@ -107,7 +100,11 @@
         </pre>
     </div>
 
-    <p>📧 **Contact:** darknetvendor@protonmail.com</p>
-    
+    <p>📧 Contact: darknetvendor@protonmail.com</p>
+
+    <!-- 🔥 Hidden Image inside an HTML Comment -->
+    <!-- Base64 Encoded Image: anonseller.png -->
+    <!-- data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0N... -->
+
 </body>
 </html>
