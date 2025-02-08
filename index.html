@@ -5,11 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DarkMarket - Leaked Databases</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: monospace;
+            padding: 20px;
+        }
+        .hidden-content {
+            display: none;
+            background: #111;
+            padding: 10px;
+            border: 1px solid lime;
+            margin-top: 5px;
+        }
+        .btn {
+            background-color: #222;
+            color: lime;
+            padding: 10px;
+            border: 1px solid lime;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #333;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            filter: grayscale(100%);
+        }
+    </style>
 </head>
-<body style="background-color:black; color:lime; font-family:monospace; padding:20px;">
-    <h1>Welcome to DarkMarket</h1>
-    <p>We sell exclusive leaked databases. Secure communication via *PGP* only.</p>
-    <pre>
+<body>
+
+    <h1>🕵️ Welcome to DarkMarket</h1>
+    <p>We sell exclusive **leaked databases**, **CC dumps**, and **SSN records**.</p>
+    <p><b>Secure communication via PGP only.</b></p>
+
+    <hr>
+
+    <!-- Suspicious-looking broken image -->
+    <p>📁 **Latest Database Leak:** <a href="leaks/dump2025.zip">dump2025.zip</a> (Encrypted: `0x1337`)</p>
+    <img src="img/anonseller.png" alt="Darknet Vendor" onerror="this.src='img/404.png';">
+
+    <p>💰 **Payment Methods:** BTC / XMR only.</p>
+    
+    <button class="btn" onclick="document.getElementById('pgpBox').style.display='block'">🔐 Show PGP Key</button>
+    <div id="pgpBox" class="hidden-content">
+        <pre>
     -----BEGIN PGP PUBLIC KEY BLOCK-----
       mQINBGel+bkBEACyrVWq/jUlq8oQMynzbsg5UL79CV82HxbryErKGWG2buaNnqii
       SKBsSiRpT3vlOSVS4FlhSalvHlt+BkmuvE7BI5CkIJH937ykbJbaVhZYWu7hjxxu
@@ -61,7 +104,10 @@
       Uw==
       =w69p
     -----END PGP PUBLIC KEY BLOCK-----
-    </pre>
-    <p>Contact: yevayoj162@owlny.com</p>
+        </pre>
+    </div>
+
+    <p>📧 **Contact:** darknetvendor@protonmail.com</p>
+    
 </body>
 </html>
